@@ -13,7 +13,7 @@ options.add_argument('--disable-blink-features=AutomationControlled')
 options.headless = True
 
 browser = webdriver.Chrome(
-    executable_path= r'C:\Users\chtox\OneDrive\Рабочий стол\Selenium\Chromedriver\chromedriver.exe',
+    executable_path= r'Chromedriver\chromedriver.exe',
     options=options)
  
 def entry():
