@@ -8,6 +8,8 @@ options = webdriver.ChromeOptions()
 #user- agent
 options.add_argument(f'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36')
 
+options.add_experimental_option('androidPackage', 'com.android.chrome')
+
 options.add_argument('--disable-blink-features=AutomationControlled')
 
 options.headless = True
@@ -52,14 +54,10 @@ def check():
 
 try: 
     print(""" 
-            .##.....##.########..######...######..##....##..######...########.....###....##.....##
-            .###...###.##.......##....##.##....##..##..##..##....##..##.....##...##.##...###...###
-            .####.####.##.......##.......##.........####...##........##.....##..##...##..####.####
-            .##.###.##.######....######...######.....##....##...####.########..##.....##.##.###.##
-            .##.....##.##.............##.......##....##....##....##..##...##...#########.##.....##
-            .##.....##.##.......##....##.##....##....##....##....##..##....##..##.....##.##.....##
-            .##.....##.########..######...######.....##.....######...##.....##.##.....##.##.....##
-            
+                                ____ ____ _  _ ____ ____ ____ ____ _  _ 
+                                |  | |__/ |\ | |  | | __ |__/ |__| |\/| 
+                                |__| |  \ | \| |__| |__] |  \ |  | |  | 
+
                                             Directed by last2nd
                         Usage:  enter count of post which you save and like
                                 input username and password from in instagram
